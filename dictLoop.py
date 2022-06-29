@@ -35,14 +35,14 @@ def collection33():
 
 
 dictOfFood = {collection11: 'script11',
-              collection11: 'script11',
-              collection11: 'script11',
-              collection21: 'script11',
-              collection21: 'script11',
-              collection21: 'script11',
-              collection31: 'script11',
-              collection31: 'script11',
-              collection31: 'script11'}
+              collection12: 'script12',
+              collection13: 'script13',
+              collection21: 'script21',
+              collection22: 'script22',
+              collection23: 'script23',
+              collection31: 'script31',
+              collection32: 'script32',
+              collection33: 'script33'}
 
 userChoice = input("Enter script name: ")
 
