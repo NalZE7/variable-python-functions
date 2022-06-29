@@ -1,20 +1,50 @@
-def battikhaHamra():
+def collection11():
     print("A watermelon's coming right up")
 
 
-def jebnehBeedah():
-    print("A plate of whitecheese for you")
+def collection12():
+    print("A watermelon's coming right up")
 
 
-def summerSpecial():
-    print("This is the ultimate dish!")
+def collection13():
+    print("A watermelon's coming right up")
 
 
-dictOfFood = {battikhaHamra: ['battikha', 'watermelon'],
-              jebnehBeedah: ['jebneh', 'jebneh beedah', 'whitecheese'],
-              summerSpecial: ['both', 'special', 'summer breeze']}
+def collection21():
+    print("A watermelon's coming right up")
 
-userChoice = input("Would you like to eat watermelon or whitecheese? ")
+
+def collection22():
+    print("A watermelon's coming right up")
+
+
+def collection23():
+    print("A watermelon's coming right up")
+
+
+def collection31():
+    print("A watermelon's coming right up")
+
+
+def collection32():
+    print("A watermelon's coming right up")
+
+
+def collection33():
+    print("A watermelon's coming right up")
+
+
+dictOfFood = {collection11: 'script11',
+              collection11: 'script11',
+              collection11: 'script11',
+              collection21: 'script11',
+              collection21: 'script11',
+              collection21: 'script11',
+              collection31: 'script11',
+              collection31: 'script11',
+              collection31: 'script11'}
+
+userChoice = input("Enter script name: ")
 
 try:
     function = [key
