@@ -106,6 +106,14 @@ def Category1():
                 function()
 
 
+def Category2():
+    print()
+
+
+def Category3():
+    print()
+
+
 def collection11():
     path = baseDirectory + "/Category1/Collection11"
 
@@ -169,7 +177,10 @@ def collection33():
     os.system(dnsMenuCommand.format(path))
 
 
-dictOfFood = {collection11: 'script11',
+dictOfFood = {Category1:    'Category1',
+              Category2:    'Category2',
+              Category3:    'Category3',
+              collection11: 'script11',
               collection12: 'script12',
               collection13: 'script13',
               collection21: 'script21',
