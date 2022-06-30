@@ -141,7 +141,7 @@ dictOfFood = {collection11: 'script11',
               collection32: 'script32',
               collection33: 'script33'}
 
-userChoice = input("Enter script name: ")
+# userChoice = input("Enter script name: ")
 
 
 def main():
