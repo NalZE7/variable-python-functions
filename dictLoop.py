@@ -40,7 +40,7 @@ def main_menu():
 
                 function = [key
                             for key, value in dictOfFood.items()
-                            if userChoice == value][0]
+                            if user_choice == value][0]
                 function()
 
 
