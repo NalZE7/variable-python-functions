@@ -22,7 +22,7 @@ def main_menu():
             continue
         # exit the while loop and the whole script
         if user_choice == 99:
-            os.system("rm -rf " + baseDirectory)
+            # os.system("rm -rf " + baseDirectory)
             print("Exiting...")
             break
         elif user_choice > len(listOfCategories) or user_choice < 0:
