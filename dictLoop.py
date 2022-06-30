@@ -63,10 +63,10 @@ try:
 except:
     print("Invalid Input")
 
-    dnsMenuCommand = "/usr/bin/python3 {}/dns_menu.py"
-    os.system(dnsMenuCommand.format(path))
+    # dnsMenuCommand = "/usr/bin/python3 {}/dns_menu.py"
+    # os.system(dnsMenuCommand.format(path))
 
-    newSiteCommand = "ansible-playbook {}/newSiteCreation.yml -e \"dest_server={} db_host={} db_password={} dest_bench={} site_name={} site_environment={} public_site_ip={} site_ip={} firewall_hostname={} proxy_server={}\""
-    os.system(newSiteCommand.format(path, destServer, dbHost, dbPassword, destBench,
-                                    siteName, siteEnvironment, sitePublicIP, siteLocalIP, firewallHostname, proxyServer))
-    # print(newSiteCommand.format(path, destServer, dbHost, dbPassword, destBench, siteName, siteEnvironment, sitePublicIP, siteLocalIP, firewallHostname, proxyServer))
+    # newSiteCommand = "ansible-playbook {}/newSiteCreation.yml -e \"dest_server={} db_host={} db_password={} dest_bench={} site_name={} site_environment={} public_site_ip={} site_ip={} firewall_hostname={} proxy_server={}\""
+    # os.system(newSiteCommand.format(path, destServer, dbHost, dbPassword, destBench,
+    #                                 siteName, siteEnvironment, sitePublicIP, siteLocalIP, firewallHostname, proxyServer))
+    # # print(newSiteCommand.format(path, destServer, dbHost, dbPassword, destBench, siteName, siteEnvironment, sitePublicIP, siteLocalIP, firewallHostname, proxyServer))
