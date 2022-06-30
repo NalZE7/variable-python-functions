@@ -107,11 +107,67 @@ def Category1():
 
 
 def Category2():
-    print()
+    path = "Category2/"
+    listOfWhatsInside = listWhatsInside(path)
+    while True:
+        list_to_menu(listOfWhatsInside)
+        try:
+            user_choice = int(input("\n>>> Enter option number: "))
+        except:
+            print("Please enter a valid Input from the list")
+            sleep(1)
+            continue
+        if user_choice == 0:
+            print("This option is reserved for special cases and not used yet")
+            sleep(1)
+            continue
+
+        # exit the while loop and the whole script
+        if user_choice == 99:
+            break
+        elif user_choice > len(listOfWhatsInside) or user_choice < 0:
+            print("Please enter a valid Input from the list")
+            sleep(1)
+            continue
+
+        index = (int(user_choice) - 1)
+        for category in listOfWhatsInside:
+            if category == listOfWhatsInside[index]:
+                function = [k for k, v in dictOfFood.items()
+                            if v == category][0]
+                function()
 
 
 def Category3():
-    print()
+    path = "Category3/"
+    listOfWhatsInside = listWhatsInside(path)
+    while True:
+        list_to_menu(listOfWhatsInside)
+        try:
+            user_choice = int(input("\n>>> Enter option number: "))
+        except:
+            print("Please enter a valid Input from the list")
+            sleep(1)
+            continue
+        if user_choice == 0:
+            print("This option is reserved for special cases and not used yet")
+            sleep(1)
+            continue
+
+        # exit the while loop and the whole script
+        if user_choice == 99:
+            break
+        elif user_choice > len(listOfWhatsInside) or user_choice < 0:
+            print("Please enter a valid Input from the list")
+            sleep(1)
+            continue
+
+        index = (int(user_choice) - 1)
+        for category in listOfWhatsInside:
+            if category == listOfWhatsInside[index]:
+                function = [k for k, v in dictOfFood.items()
+                            if v == category][0]
+                function()
 
 
 def Collection11():
