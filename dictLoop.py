@@ -48,9 +48,9 @@ def listCategories():
     listOfCategories = []
     listOfFiles = (subprocess.check_output(
         ["ls --group-directories-first " + baseDirectory], shell=True).decode("utf-8")).strip().split('\n')
-    # and item != "all-in-one.py" and item != "Management":
-    for item in listOfFiles and item != "dictLoop.py":
-        if item != "README.md":
+    for item in listOfFiles:
+        # and item != "all-in-one.py" and item != "Management":
+        if item != "README.md" and item != "dictLoop.py":
             listOfCategories.append(item)
     return listOfCategories
 
