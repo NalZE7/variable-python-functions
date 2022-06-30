@@ -114,63 +114,63 @@ def Category3():
     print()
 
 
-def collection11():
+def Collection11():
     path = baseDirectory + "/Category1/Collection11"
 
     dnsMenuCommand = "/usr/bin/python3 {}/script11.py"
     os.system(dnsMenuCommand.format(path))
 
 
-def collection12():
+def Collection12():
     path = baseDirectory + "/Category1/Collection12"
 
     dnsMenuCommand = "/usr/bin/python3 {}/script12.py"
     os.system(dnsMenuCommand.format(path))
 
 
-def collection13():
+def Collection13():
     path = baseDirectory + "/Category1/Collection13"
 
     dnsMenuCommand = "/usr/bin/python3 {}/script13.py"
     os.system(dnsMenuCommand.format(path))
 
 
-def collection21():
+def Collection21():
     path = baseDirectory + "/Category2/Collection21"
 
     dnsMenuCommand = "/usr/bin/python3 {}/script21.py"
     os.system(dnsMenuCommand.format(path))
 
 
-def collection22():
+def Collection22():
     path = baseDirectory + "/Category2/Collection22"
 
     dnsMenuCommand = "/usr/bin/python3 {}/script22.py"
     os.system(dnsMenuCommand.format(path))
 
 
-def collection23():
+def Collection23():
     path = baseDirectory + "/Category2/Collection23"
 
     dnsMenuCommand = "/usr/bin/python3 {}/script23.py"
     os.system(dnsMenuCommand.format(path))
 
 
-def collection31():
+def Collection31():
     path = baseDirectory + "/Category3/Collection31"
 
     dnsMenuCommand = "/usr/bin/python3 {}/script31.py"
     os.system(dnsMenuCommand.format(path))
 
 
-def collection32():
+def Collection32():
     path = baseDirectory + "/Category3/Collection32"
 
     dnsMenuCommand = "/usr/bin/python3 {}/script32.py"
     os.system(dnsMenuCommand.format(path))
 
 
-def collection33():
+def Collection33():
     path = baseDirectory + "/Category3/Collection33"
 
     dnsMenuCommand = "/usr/bin/python3 {}/script33.py"
@@ -180,15 +180,15 @@ def collection33():
 dictOfFood = {Category1:    'Category1',
               Category2:    'Category2',
               Category3:    'Category3',
-              collection11: 'script11',
-              collection12: 'script12',
-              collection13: 'script13',
-              collection21: 'script21',
-              collection22: 'script22',
-              collection23: 'script23',
-              collection31: 'script31',
-              collection32: 'script32',
-              collection33: 'script33'}
+              Collection11: 'script11',
+              Collection12: 'script12',
+              Collection13: 'script13',
+              Collection21: 'script21',
+              Collection22: 'script22',
+              Collection23: 'script23',
+              Collection31: 'script31',
+              Collection32: 'script32',
+              Collection33: 'script33'}
 
 # userChoice = input("Enter script name: ")
 
