@@ -33,15 +33,15 @@ def main_menu():
         index = (int(user_choice) - 1)
         for category in listOfCategories:
             if category == listOfCategories[index]:
-                # function = [k
-                #             for k, v in dictOfFood.items()
-                #             if v == category][0]
-                # function()
-
-                function = [key
-                            for key, value in dictOfFood.items()
-                            if user_choice == value][0]
+                function = [k
+                            for k, v in dictOfFood.items()
+                            if v == category][0]
                 function()
+
+                # function = [key
+                #             for key, value in dictOfFood.items()
+                #             if user_choice == value][0]
+                # function()
 
 
 def listCategories():
