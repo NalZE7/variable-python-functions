@@ -1,8 +1,12 @@
 ---
-- name: cat a file
+- name: Running a demo playbook
   hosts: localhost
 
   tasks:
-    - name: print current working dir
+    - name: Print current working dir
       shell:
         cmd: pwd
+
+    - name: Print os release
+      shell:
+        cmd: cat /etc/*release

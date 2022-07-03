@@ -146,7 +146,7 @@ def Collection12():
 def Collection13():
     path = baseDirectory + "/Category1/Collection13"
 
-    dnsMenuCommand = "/usr/bin/python3 {}/script13.py"
+    dnsMenuCommand = "/bin/bash {}/script13.sh"
     os.system(dnsMenuCommand.format(path))
 
 
@@ -167,7 +167,7 @@ def Collection22():
 def Collection23():
     path = baseDirectory + "/Category2/Collection23"
 
-    dnsMenuCommand = "/usr/bin/python3 {}/script23.py"
+    dnsMenuCommand = "/bin/bash {}/script23.sh"
     os.system(dnsMenuCommand.format(path))
 
 
