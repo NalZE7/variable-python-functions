@@ -22,7 +22,6 @@ def main_menu():
             continue
         # exit the while loop and the whole script
         if user_choice == 99:
-            # os.system("rm -rf " + baseDirectory)
             print("Exiting...")
             break
         elif user_choice > len(listOfCategories) or user_choice < 0:
@@ -38,18 +37,12 @@ def main_menu():
                             if v == category][0]
                 function()
 
-                # function = [key
-                #             for key, value in dictOfFood.items()
-                #             if user_choice == value][0]
-                # function()
-
 
 def listCategories():
     listOfCategories = []
     listOfFiles = (subprocess.check_output(
         ["ls --group-directories-first " + baseDirectory], shell=True).decode("utf-8")).strip().split('\n')
     for item in listOfFiles:
-        # and item != "all-in-one.py" and item != "Management":
         if item != "README.md" and item != "dictLoop.py":
             listOfCategories.append(item)
     return listOfCategories
@@ -61,8 +54,6 @@ def list_to_menu(list_to_menu):
         print()
         for item in list_to_menu:
             number += 1
-            # if number-1 > len(list_to_menu):
-            #     return
             print(str(number) + ".", item)
         print("\n99. Back\n")
         break
@@ -246,8 +237,6 @@ dictOfFood = {Category1:    'Category1',
               Collection32: 'Collection32',
               Collection33: 'Collection33'}
 
-# userChoice = input("Enter script name: ")
-
 
 def main():
 
@@ -257,19 +246,3 @@ def main():
 if __name__ == '__main__':
     main()
 
-
-# try:
-#     function = [key
-#                 for key, listOfValues in dictOfFood.items()
-#                 if userChoice in listOfValues][0]
-#     function()
-# except:
-#     print("Invalid Input")
-
-    # dnsMenuCommand = "/usr/bin/python3 {}/dns_menu.py"
-    # os.system(dnsMenuCommand.format(path))
-
-    # newSiteCommand = "ansible-playbook {}/newSiteCreation.yml -e \"dest_server={} db_host={} db_password={} dest_bench={} site_name={} site_environment={} public_site_ip={} site_ip={} firewall_hostname={} proxy_server={}\""
-    # os.system(newSiteCommand.format(path, destServer, dbHost, dbPassword, destBench,
-    #                                 siteName, siteEnvironment, sitePublicIP, siteLocalIP, firewallHostname, proxyServer))
-    # # print(newSiteCommand.format(path, destServer, dbHost, dbPassword, destBench, siteName, siteEnvironment, sitePublicIP, siteLocalIP, firewallHostname, proxyServer))
