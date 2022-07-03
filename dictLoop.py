@@ -139,7 +139,7 @@ def Collection11():
 def Collection12():
     path = baseDirectory + "/Category1/Collection12"
 
-    dnsMenuCommand = "/usr/bin/python3 {}/script12.py"
+    dnsMenuCommand = "/usr/bin/ansible-playbook {}/script12.yml"
     os.system(dnsMenuCommand.format(path))
 
 
@@ -188,4 +188,3 @@ def main():
 
 if __name__ == '__main__':
     main()
-
