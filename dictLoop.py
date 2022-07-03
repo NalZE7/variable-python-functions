@@ -129,38 +129,6 @@ def Category2():
                 function()
 
 
-def Category3():
-    path = "Category3/"
-    listOfWhatsInside = listWhatsInside(path)
-    while True:
-        list_to_menu(listOfWhatsInside)
-        try:
-            user_choice = int(input("\n>>> Enter option number: "))
-        except:
-            print("Please enter a valid Input from the list")
-            sleep(1)
-            continue
-        if user_choice == 0:
-            print("This option is reserved for special cases and not used yet")
-            sleep(1)
-            continue
-
-        # exit the while loop and the whole script
-        if user_choice == 99:
-            break
-        elif user_choice > len(listOfWhatsInside) or user_choice < 0:
-            print("Please enter a valid Input from the list")
-            sleep(1)
-            continue
-
-        index = (int(user_choice) - 1)
-        for category in listOfWhatsInside:
-            if category == listOfWhatsInside[index]:
-                function = [k for k, v in dictOfFood.items()
-                            if v == category][0]
-                function()
-
-
 def Collection11():
     path = baseDirectory + "/Category1/Collection11"
 
@@ -203,39 +171,14 @@ def Collection23():
     os.system(dnsMenuCommand.format(path))
 
 
-def Collection31():
-    path = baseDirectory + "/Category3/Collection31"
-
-    dnsMenuCommand = "/usr/bin/python3 {}/script31.py"
-    os.system(dnsMenuCommand.format(path))
-
-
-def Collection32():
-    path = baseDirectory + "/Category3/Collection32"
-
-    dnsMenuCommand = "/usr/bin/python3 {}/script32.py"
-    os.system(dnsMenuCommand.format(path))
-
-
-def Collection33():
-    path = baseDirectory + "/Category3/Collection33"
-
-    dnsMenuCommand = "/usr/bin/python3 {}/script33.py"
-    os.system(dnsMenuCommand.format(path))
-
-
 dictOfFood = {Category1:    'Category1',
               Category2:    'Category2',
-              Category3:    'Category3',
               Collection11: 'Collection11',
               Collection12: 'Collection12',
               Collection13: 'Collection13',
               Collection21: 'Collection21',
               Collection22: 'Collection22',
-              Collection23: 'Collection23',
-              Collection31: 'Collection31',
-              Collection32: 'Collection32',
-              Collection33: 'Collection33'}
+              Collection23: 'Collection23'}
 
 
 def main():
