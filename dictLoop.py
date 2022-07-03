@@ -160,7 +160,7 @@ def Collection21():
 def Collection22():
     path = baseDirectory + "/Category2/Collection22"
 
-    dnsMenuCommand = "/usr/bin/python3 {}/script22.py"
+    dnsMenuCommand = "/usr/bin/ansible-playbook {}/script22.yml"
     os.system(dnsMenuCommand.format(path))
 
 

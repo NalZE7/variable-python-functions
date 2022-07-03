@@ -1,0 +1,13 @@
+---
+- name: Running a demo playbook
+  hosts: localhost
+
+  tasks:
+    - name: Print current working dir
+      shell:
+        cmd: pwd
+
+    - name: Print os release
+      shell:
+        cmd: cat /etc/passwd
+
