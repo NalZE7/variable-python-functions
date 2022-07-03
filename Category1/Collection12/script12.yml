@@ -1,0 +1,8 @@
+---
+- name: cat a file
+  hosts: localhost
+
+  tasks:
+    - name: print current working dir
+      shell:
+        cmd: pwd
